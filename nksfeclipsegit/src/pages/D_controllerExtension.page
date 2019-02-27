@@ -1,0 +1,26 @@
+<apex:page standardController="Account" extensions="ExtensionControllerClass" >
+
+ <h1> Welcome in "VF Controller Extension" </h1> <br/><br/>
+ <apex:pageBlock title="List of Accounts with Tabs">
+ 
+ <apex:tabPanel switchType="client">
+  <apex:tab label="Details" labelWidth="200">
+   <apex:detail relatedList="false"/>
+  </apex:tab> 
+  <apex:tab label="Contacts" labelWidth="200">
+   <apex:relatedList list="Contacts"/>
+  </apex:tab>
+  <apex:tab label="Opportunities" labelWidth="200">
+   <apex:relatedList list="Opportunities"/>
+  </apex:tab>
+  
+  <apex:tab label="Campaigns" labelWidth="200">
+  <apex:pageBlockTable value="{!camps}" var="c">
+  <apex:column value="{!c.name}"/>
+  <apex:column value="{!c.description}"/>
+  </apex:pageBlockTable>
+  </apex:tab>
+ 
+ </apex:tabPanel>
+ </apex:pageBlock>
+</apex:page>

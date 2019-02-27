@@ -1,0 +1,28 @@
+<!--  <apex:page >
+ 
+  <h1> Apex:PageMessages Tag </h1>  //Seperate PageMessage
+  
+  <apex:pageBlock >
+  
+   <apex:pageMessage summary="Error Message" severity="Error" strength="3">
+   </apex:pageMessage>
+   <apex:pageMessage summary="Conform Message" severity="Conform" strength="2">
+   </apex:pageMessage>  
+   <apex:pageMessage summary="Info Message" severity="Info" strength="1">
+   </apex:pageMessage>
+   <apex:pageMessage summary="Warning Message" severity="Warning" strength="2">
+   </apex:pageMessage>
+   
+  </apex:pageBlock>
+</apex:page>         -->
+
+<apex:page >         //Single PageMessages
+<apex:pageMessage severity="Error" summary="First Error message on page" strength="1"></apex:pageMessage>
+<apex:pageMessage severity="Info" detail="Second Info message on page" strength="2"></apex:pageMessage>
+<apex:pageMessage severity="Confirm" detail="Third Conform message on page" strength="3"></apex:pageMessage>
+<apex:pageMessage severity="Warning" detail="Fourth warning message on page" strength="3"></apex:pageMessage>
+<apex:pageMessage severity="Fatal" detail="Fifth fatal message on page" strength="3"></apex:pageMessage>
+<apex:pageMessage severity="Fatal" detail="6th fatal message with strength=0 on page" strength="0"></apex:pageMessage>
+<apex:pageMessages > </apex:pageMessages>
+ 
+</apex:page>

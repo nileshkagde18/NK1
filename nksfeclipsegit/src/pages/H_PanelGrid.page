@@ -1,0 +1,14 @@
+<apex:page > 
+<h1> Apex PanelGrid Tag </h1> <br/><br/>
+
+<apex:panelGrid columns="3" id="grid" border="2">
+
+<apex:outputText value="1" id="first"> </apex:outputText>
+<apex:outputText value="2" id="second"> </apex:outputText>
+<apex:outputText value="3" id="third"> </apex:outputText>
+<apex:panelGroup >
+<apex:outputText value="4" id="fourth"> </apex:outputText>
+<apex:outputText value="5" id="fifth"> </apex:outputText>
+</apex:panelGroup>
+</apex:panelGrid>
+</apex:page>

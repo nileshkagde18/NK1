@@ -1,0 +1,16 @@
+<apex:page standardController="Account" recordSetVar="acts">
+ <apex:form >
+ <h1> Welcome in "VF Standard List Controller" </h1> <br/><br/>
+ <apex:pageBlock title="List of Accounts" mode="inlineEdit">
+ <apex:pageBlockSection title="Account"  >
+ <apex:pageBlockTable value="{!acts}" var="a" >
+ <apex:column value="{!a.name}"/>
+ <apex:column value="{!a.Industry}"/>
+ <apex:column value="{!a.TickerSymbol}"/>
+ </apex:pageBlockTable>
+ <apex:inlineEditSupport />
+<apex:commandButton value="Save now" action="{!QuickSave}"/>
+ </apex:pageBlockSection>
+ </apex:pageBlock>
+  </apex:form>
+</apex:page>

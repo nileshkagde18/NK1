@@ -1,0 +1,30 @@
+<apex:page controller="CustomControllerClass">
+ <apex:form >
+  <h1> Welcome in "VF Custom Controller"</h1> <br/> <br/>
+  
+  <apex:pageBlock Title="Account Records" mode="edit">
+  <apex:tabpanel switchtype="client">
+  <apex:tab label="Banking" labelWidth="200">  
+  <apex:pageblockTable value="{!acts}" var="a">
+  <apex:column value="{!a.name}"/>
+  <apex:column value="{!a.type}"/>
+  <apex:column value="{!a.industry}"/>
+  <apex:column value="{!a.phone}"/>
+  <apex:column value="{!a.fax}"/>
+  </apex:pageblockTable>
+  </apex:tab>
+  
+  <apex:tab label="Education" labelWidth="200">
+  <apex:pageblockTable value="{!acts2}" var="b">
+  <apex:column value="{!b.name}"/>
+  <apex:column value="{!b.type}"/>
+  <apex:column value="{!b.industry}"/>
+  <apex:column value="{!b.phone}"/>
+  <apex:column value="{!b.fax}"/>
+  </apex:pageblockTable> 
+  </apex:tab>
+  
+  </apex:tabpanel>
+  </apex:pageBlock> 
+ </apex:form> 
+</apex:page>

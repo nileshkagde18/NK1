@@ -1,0 +1,6 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations by nilesh</h1>
+  This is my 1st page: Apex visualforce
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
