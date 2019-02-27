@@ -15,5 +15,7 @@ public class class1 {
         System.debug('	Inserted Account:'+acclist);
         //edition done in eclipse
         //hello by eclipse
+        //edited in github
+        //i am fine in github
     }       
 }
