@@ -13,5 +13,7 @@ public class class1 {
         }
         insert acclist;
         System.debug('	Inserted Account:'+acclist);
+        //edition done in eclipse
+        //hello by eclipse
     }       
 }
