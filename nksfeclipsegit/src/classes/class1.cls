@@ -12,10 +12,10 @@ public class class1 {
         acclist.add(acc);
         }
         insert acclist;
-        System.debug('	Inserted Account:'+acclist);
-        //edition done in eclipse
-        //hello by eclipse
-        //edited in github
-        //i am fine in github
+        System.debug('  Inserted Account:'+acclist);
+        //edited in salesforce
+        //fine in salesforce
+        //edited in eclipse 28/2/19
+        //fine done
     }       
 }
